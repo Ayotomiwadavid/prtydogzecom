@@ -24,9 +24,15 @@ const Navbar = (props) => {
         </div>
       </div>
       <ul className='md:w-1/2 md:h-full list-none flex w-full md:flex-row flex-col items-start md:items-center justify-center pt-7 md:py-0 px-2 gap-5'>
-        <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1  text-center cursor-pointer'>home</li>
-        <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1  text-center cursor-pointer'>about</li>
-        <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1 text-center cursor-pointer'>products</li>
+        <Link to='/'>
+          <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1  text-center cursor-pointer'>home</li>
+        </Link>
+        <Link to='/about'>
+          <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1  text-center cursor-pointer'>about</li>
+        </Link>
+        <Link to='/products'>
+          <li className='capitalize text-clr-grey-3 px-2 p-1 transition-all duration-300 text-base navitems md:hover:border-b-2 md:border-clr-primary-1 text-center cursor-pointer'>products</li>
+        </Link>
       </ul>
       <div className='md:w-1/2 md:h-full flex w-full py-5 md:py-0 items-center justify-center gap-5'>
         <Link to='/cart'>
