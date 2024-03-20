@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.productsearchContainer{
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.productCrad:hover > .productsearchContainer{
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}

@@ -1,0 +1,12 @@
+GET http://localhost:5000/product
+
+### 
+POST  http://localhost:5000/product
+Content-Type: application/json
+
+{
+        "name": "req.body.name",
+        "image": "req.body.image",
+        "price": "req.body.price",
+        "category": "req.body.category"
+}
