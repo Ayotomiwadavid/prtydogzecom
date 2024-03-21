@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
+//IMPORT ROUTER
+const ProductRoutes = require('./routes/productroute')
+
 // ASSIGNING EXPRESS VARIABLES
 const app = express();
 const port = 3000;
@@ -35,3 +38,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+app.use('/api/products', ProductRoutes);

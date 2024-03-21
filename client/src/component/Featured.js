@@ -15,7 +15,7 @@ const Featured = () => {
                 <Productcard />
             </main>
             <Link to='/products'>
-            <button className='rounded-md py-2 px-5 cursor-pointer outline-none border-none capitalize bg-clr-primary-5 hover:bg-clr-primary-8 transition-all duration-500 shadow-lg text-clr-grey-10 hover:text-clr-primary-5'>all ptoducts</button>
+            <button className='rounded-md py-2 px-5 cursor-pointer outline-none border-none capitalize bg-clr-primary-5 hover:bg-clr-primary-8 transition-all duration-500 shadow-lg text-clr-grey-10 hover:text-clr-primary-5'>all products</button>
             </Link>
         </section>
     )
