@@ -1,6 +1,7 @@
 // IMPORTING DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
@@ -10,6 +11,7 @@ const ProductRoutes = require('./routes/productroute')
 // ASSIGNING EXPRESS VARIABLES
 const app = express();
 const port = 3000;
+app.use(cors());
 
 // CONNECTING TO MONGODB
 mongoose.connect('mongodb://localhost:27017/techthoth', { useNewUrlParser: true, useUnifiedTopology: true });

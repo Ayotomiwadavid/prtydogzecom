@@ -7,7 +7,7 @@ const Appbar = () => {
   let [showMenu, setShowMenu] = useState(false);
   let handleMenu = () =>{
     setShowMenu((prevValue) =>{
-      if (prevValue == false) {
+      if (prevValue === false) {
         return true
       } else {
         return false

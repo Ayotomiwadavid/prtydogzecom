@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import Productcard from './Productcard'
 import { Link } from 'react-router-dom'
 
 const Featured = () => {
+    // let [externalProducts, setExternalProducts] = useState([])
+
+    useEffect(()=>{
+        const fetchProducts = async () =>{
+            await fetch('http://localhost:3000/api/products/getexternalProducts')
+             .then(res=>res.json())
+             .then(data=> console.log(data.data))
+             .catch(err =>{
+               console.log(err)
+             })
+         }
+         fetchProducts()
+    }, []);
+
     return (
         <section className='bg-clr-grey-10 w-full py-10  flex flex-col items-center justify-center'>
             <div className='w-full justify-center items-center flex flex-col relative'>

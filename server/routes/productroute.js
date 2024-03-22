@@ -4,6 +4,7 @@ const router = express.Router();
 const ProductContoller = require('../controller/productcontoller')
 
 router.get('/', ProductContoller.index);
+router.get('/getexternalProducts', ProductContoller.getPrintifyProducts);
 router.post('/show', ProductContoller.show);
 router.post('/store', ProductContoller.store);
 router.post('/update', ProductContoller.update);
